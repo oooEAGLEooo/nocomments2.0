@@ -5,8 +5,8 @@ $user = "root"; /* User */
 $password = ""; /* Password */
 $dbname = "nocomments_db"; /* Database name */
 
-$con = mysqli_connect($host, $user, $password,$dbname);
-// Check connection
-if (!$con) {
+$connection = mysqli_connect($host, $user, $password,$dbname);
+
+if (!$connection) {
   die("Connection failed: " . mysqli_connect_error());
 }
